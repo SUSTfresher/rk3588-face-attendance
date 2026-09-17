@@ -1,0 +1,10 @@
+# Keep board-facing text files portable when the repository is edited on Windows
+# and built on Linux. Binary data is intentionally not versioned in this project.
+* text=auto
+*.sh text eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.pro text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+.gitignore text eol=lf

@@ -1,0 +1,37 @@
+# qmake and native build output
+Makefile
+.qmake.stash
+*.o
+*.d
+face_attendance
+*_test
+*.exe
+
+# Runtime data and any biometric/personal information
+data/
+backups/
+exports/
+perf_logs/
+acceptance_logs/
+*.db
+*.sqlite
+*.sqlite3
+*.feature.txt
+
+# Model binaries and vendor-provided runtime/SDK files
+models/*.rknn
+models/*.onnx
+lib/
+include/rknn_api.h
+
+# Captured, aligned, or generated visual data and local archives
+*.png
+*.jpg
+*.jpeg
+*.tar.gz
+
+# Local editor and operating-system state
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
