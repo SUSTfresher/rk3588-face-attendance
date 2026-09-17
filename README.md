@@ -1,6 +1,10 @@
 # RK3588 端侧人脸考勤原型
 
+![RK3588 edge face attendance architecture](assets/architecture-overview.png)
+
 一个运行在 Orange Pi 5（RK3588）上的离线人脸考勤开发原型。程序通过 V4L2 采集 NV12 相机画面，使用 RKNN Runtime 在 NPU 上执行 RetinaFace 检测和 MobileFaceNet 特征提取，在本地 SQLite 保存样本与按日去重的测试考勤记录，并使用 Qt5/linuxfb 提供竖屏触摸界面。
+
+上图是无个人数据的项目架构插画，用于说明已验证的 CAM3 相机、HDMI 显示、Type-C 显示供电和端侧数据流；实际接线、上电检查及当前 framebuffer 模式以 [硬件连接文档](docs/HARDWARE_WIRING.md) 为准。
 
 本仓库是可复现源码，不包含模型、RKNN Runtime、数据库、人脸图片、嵌入特征、CSV 导出或性能日志。
 

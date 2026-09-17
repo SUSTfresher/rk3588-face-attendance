@@ -30,6 +30,11 @@ include/rknn_api.h
 *.jpeg
 *.tar.gz
 
+# The README architecture illustration is intentionally public. Captured faces,
+# aligned images, screenshots, and every other local PNG/JPEG remain ignored.
+!assets/
+!assets/architecture-overview.png
+
 # Local editor and operating-system state
 .vscode/
 .idea/
