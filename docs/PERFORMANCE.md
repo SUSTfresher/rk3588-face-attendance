@@ -7,8 +7,8 @@
 | 项目 | 配置 |
 |---|---|
 | 平台 | Orange Pi 5，RK3588，Linux 6.1.43-rockchip-rk3588 |
-| 显示 | linuxfb 原生 720 x 480，应用使用 480 x 720 竖屏逻辑坐标 |
-| 摄像头 | `/dev/video-camera0`，V4L2 NV12，720 x 480，stride 720 |
+| 显示 | 7 英寸 IPS 触摸屏，面板原生 1024 x 600；测试时 linuxfb 实际 framebuffer 为 720 x 480，应用使用 480 x 720 竖屏逻辑坐标 |
+| 摄像头 | Orange Pi 13 MP `13855` 模组经 CAM3 连接；`/dev/video-camera0`，V4L2 NV12，720 x 480，stride 720 |
 | 人脸检测 | RetinaFace mobile 320，`RetinaFace_mobile320_rk3588.rknn` |
 | 人脸识别 | MobileFaceNet，`w600k_mbf_rk3588.rknn`，512维特征 |
 | 运行时 | RKNN Runtime，Qt 5，OpenCV（人脸仿射对齐） |

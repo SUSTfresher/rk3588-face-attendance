@@ -25,7 +25,8 @@ V4L2 NV12 camera
 
 ## 环境要求
 
-- Orange Pi 5 / RK3588，Linux，已工作的 V4L2 NV12 摄像头（当前设备节点为 `/dev/video-camera0`）。
+- Orange Pi 5 / RK3588，Linux，Orange Pi 13 MP `13855` 相机经 CAM3 接口连接（当前设备节点为 `/dev/video-camera0`）。
+- 7 英寸 IPS 触摸屏，原生 1024 x 600，HDMI 视频与 Type-C 供电；当前系统实际 framebuffer 模式为 720 x 480，详见硬件连接文档。
 - Qt5 Widgets、SQLite3、OpenCV Core/Imgproc/Calib3d、qmake、C++17 编译器。
 - 与设备/模型匹配的 RKNN Runtime SDK，提供 `include/rknn_api.h` 与 `lib/librknnrt.so`。
 - 两个对应 RK3588 的 `.rknn` 模型。确切文件名和来源记录方式见 [docs/MODELS.md](docs/MODELS.md)。
@@ -54,6 +55,7 @@ bash ./run_face_attendance.sh
 
 - [性能和稳定性](docs/PERFORMANCE.md)
 - [模型与供应商依赖](docs/MODELS.md)
+- [硬件连接与上电检查](docs/HARDWARE_WIRING.md)
 - [测试说明](docs/TESTING.md)
 - [考勤 CSV 导出](docs/CSV_EXPORT.md)
 - [录入和图库自动刷新](docs/ENROLLMENT_UPDATE.md)
